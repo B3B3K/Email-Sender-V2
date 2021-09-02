@@ -10,7 +10,7 @@ SUBJECT = bas
 TEXT = txt
 send_from = ism
 if noot user or nt passw:
-        passw = "!EDİT THİS!" #EDŞT THŞS TO YOUR PASSWORD
+        passw = "!EDİT THİS!" #EDİT THİS TO YOUR PASSWORD
         user = "!EDİT THİS!" #EDİT THİS TO YOUR GMAİL
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.ehlo()
@@ -21,4 +21,5 @@ BODY = '\r\n'.join(['To: %s' % TO,
         'Subject: %s' % SUBJECT,
         '', TEXT])
 server.sendmail(user, [TO], BODY)
-print ('email sent')
+print ('''
+EMAİL İS SENDED''')
